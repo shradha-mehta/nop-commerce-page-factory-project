@@ -1,0 +1,10 @@
+com\demo\nopcommerce\testsuite\LoginTest.class
+com\demo\nopcommerce\listeners\Listeners.class
+com\demo\nopcommerce\testbase\TestBase.class
+com\demo\nopcommerce\testsuite\RegistrationTest.class
+com\demo\nopcommerce\resources\testdata\TestData.class
+com\demo\nopcommerce\testsuite\RegistrationTestWithDataProviderClass.class
+com\demo\nopcommerce\testsuite\LoginTestWithExcelFile.class
+com\demo\nopcommerce\testsuite\LoginTestWithDataProviderClass.class
+com\demo\nopcommerce\testsuite\RegistrationWithExcelFile.class
+com\demo\nopcommerce\testsuite\ComputerTest.class

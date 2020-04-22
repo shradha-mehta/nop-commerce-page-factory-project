@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 575.776 s <<< FAILURE! - in TestSuite
+verifyUserShouldNotAddProductToCartSuccessfully(com.demo.nopcommerce.testsuite.ComputerTest)  Time elapsed: 44.214 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [The product has been added to your shopping cart] but found [The product has been added to your shopping]
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserShouldNotAddProductToCartSuccessfully(ComputerTest.java:67)
+
+verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully(com.demo.nopcommerce.testsuite.LoginTest)  Time elapsed: 35.533 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Welcome to our store] but found [Welcome]
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully(LoginTest.java:62)
+
+verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials(com.demo.nopcommerce.testsuite.RegistrationTest)  Time elapsed: 113.881 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".result"}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H84TQ4F', ip: '192.168.0.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Pradip\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 984890907287b9ca810be936303ec202
+*** Element info: {Using=class name, value=result}
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials(RegistrationTest.java:85)
+

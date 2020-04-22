@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserShouldNotAddProductToCartSuccessfully">verifyUserShouldNotAddProductToCartSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully">verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials">verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserShouldAddProductToCartSuccessfully">verifyUserShouldAddProductToCartSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserShouldLoginWithValidCredentialsSuccessfully">verifyUserShouldLoginWithValidCredentialsSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.ComputerTest" hash-for-method="verifyUserShouldNavigateToComputersPage">verifyUserShouldNavigateToComputersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.LoginTest" hash-for-method="verifyUserShouldNavigateToLoginFeature">verifyUserShouldNavigateToLoginFeature</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyUserShouldNavigateToRegisterPage">verifyUserShouldNavigateToRegisterPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.demo.nopcommerce.testsuite.RegistrationTest" hash-for-method="verifyUserShouldRegisterSuccessfullyWithValidCredentials">verifyUserShouldRegisterSuccessfullyWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.ComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNotAddProductToCartSuccessfully">
+                  </a> <!-- verifyUserShouldNotAddProductToCartSuccessfully -->
+                  <span class="method-name">verifyUserShouldNotAddProductToCartSuccessfully</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [The product has been added to your shopping cart] but found [The product has been added to your shopping]
+	at com.demo.nopcommerce.testsuite.ComputerTest.verifyUserShouldNotAddProductToCartSuccessfully(ComputerTest.java:67)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials">
+                  </a> <!-- verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials -->
+                  <span class="method-name">verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-H84TQ4F&apos;, ip: &apos;192.168.0.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Pradip\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 984890907287b9ca810be936303ec202
+*** Element info: {Using=class name, value=result}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.demo.nopcommerce.Utility.Utility.getTextFromElement(Utility.java:90)
+	at com.demo.nopcommerce.pages.RegisterPage.registrationCompleteMessage(RegisterPage.java:130)
+	at com.demo.nopcommerce.testsuite.RegistrationTest.verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials(RegistrationTest.java:85)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully">
+                  </a> <!-- verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully -->
+                  <span class="method-name">verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Welcome to our store] but found [Welcome]
+	at com.demo.nopcommerce.testsuite.LoginTest.verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully(LoginTest.java:62)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.ComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldAddProductToCartSuccessfully">
+                  </a> <!-- verifyUserShouldAddProductToCartSuccessfully -->
+                  <span class="method-name">verifyUserShouldAddProductToCartSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToComputersPage">
+                  </a> <!-- verifyUserShouldNavigateToComputersPage -->
+                  <span class="method-name">verifyUserShouldNavigateToComputersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToRegisterPage">
+                  </a> <!-- verifyUserShouldNavigateToRegisterPage -->
+                  <span class="method-name">verifyUserShouldNavigateToRegisterPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldRegisterSuccessfullyWithValidCredentials">
+                  </a> <!-- verifyUserShouldRegisterSuccessfullyWithValidCredentials -->
+                  <span class="method-name">verifyUserShouldRegisterSuccessfullyWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.nopcommerce.testsuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldLoginWithValidCredentialsSuccessfully">
+                  </a> <!-- verifyUserShouldLoginWithValidCredentialsSuccessfully -->
+                  <span class="method-name">verifyUserShouldLoginWithValidCredentialsSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToLoginFeature">
+                  </a> <!-- verifyUserShouldNavigateToLoginFeature -->
+                  <span class="method-name">verifyUserShouldNavigateToLoginFeature</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.resources.testdata.TestData&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testbase.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.ComputerTest&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.demo.nopcommerce.testsuite.RegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldAddProductToCartSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldLoginWithValidCredentialsSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginFeature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNotAddProductToCartSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldRegisterSuccessfullyWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToComputersPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginFeature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldAddProductToCartSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldLoginWithValidCredentialsSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldRegisterSuccessfullyWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials')
+data.setCell(0, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(0, 3, 114213);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserShouldNotAddProductToCartSuccessfully')
+data.setCell(1, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(1, 3, 44200);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserShouldAddProductToCartSuccessfully')
+data.setCell(2, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(2, 3, 42032);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserShouldRegisterSuccessfullyWithValidCredentials')
+data.setCell(3, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(3, 3, 41321);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserShouldLoginWithValidCredentialsSuccessfully')
+data.setCell(4, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(4, 3, 36308);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully')
+data.setCell(5, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(5, 3, 35471);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUserShouldNavigateToRegisterPage')
+data.setCell(6, 2, 'com.demo.nopcommerce.testsuite.RegistrationTest')
+data.setCell(6, 3, 7034);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserShouldNavigateToLoginFeature')
+data.setCell(7, 2, 'com.demo.nopcommerce.testsuite.LoginTest')
+data.setCell(7, 3, 2926);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyUserShouldNavigateToComputersPage')
+data.setCell(8, 2, 'com.demo.nopcommerce.testsuite.ComputerTest')
+data.setCell(8, 3, 1301);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldRegisterSuccessfullyWithValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on register button [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Clicking on Radio Button [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: gender-male]<br></span>
+                <span class="reporter-method-output">Enter First Name dhannoRunFirst Name Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: FirstName]<br></span>
+                <span class="reporter-method-output">Enter Last Name runLast Name Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: LastName]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Day 4Date Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> name: DateOfBirthDay]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Month mayBirth Month Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> name: DateOfBirthMonth]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Year 1985Birth Year Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> name: DateOfBirthYear]<br></span>
+                <span class="reporter-method-output">Enter Email dhannoG1@gmail.comEmail Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Enter Company Name dhanno limitedCompany Name Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: Company]<br></span>
+                <span class="reporter-method-output">Clicking on check box button for NewsLetter [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: Newsletter]<br></span>
+                <span class="reporter-method-output">Enter Password dhannorun123@On Password Field[[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: Password]<br></span>
+                <span class="reporter-method-output">Enter Confirm Password dhannorun123@Confirm Password Field [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: ConfirmPassword]<br></span>
+                <span class="reporter-method-output">Clicking On Registration Button [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> id: register-button]<br></span>
+                <span class="reporter-method-output">Getting Registration Complete Message [[ChromeDriver: chrome on WINDOWS (7f842830b8bcc4b20c0624c005a56f44)] -> class name: result]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToLoginFeature</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Getting welcome [[ChromeDriver: chrome on WINDOWS (98548f886b3403138578232af148b1ef)] -> xpath: //h1[contains(text(),'Welcome, Please Sign In!')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToComputersPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on computer button [[ChromeDriver: chrome on WINDOWS (52dd843663c0b771d83ee6d7d2ad03b8)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Getting computer text message [[ChromeDriver: chrome on WINDOWS (52dd843663c0b771d83ee6d7d2ad03b8)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldAddProductToCartSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on computer button [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Clicking on Desktop button [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Desktops')]]<br></span>
+                <span class="reporter-method-output">Clicking on position [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> id: products-orderby]<br></span>
+                <span class="reporter-method-output">Clicking on A to Z [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> xpath: //option[contains(text(),'Name: A to Z')]]<br></span>
+                <span class="reporter-method-output">Clicking on build computer [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> link text: Build your own computer]<br></span>
+                <span class="reporter-method-output">Clicking on radio button feature [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> xpath: //input[@id='product_attribute_3_7']]</span>
+                <span class="reporter-method-output">Clicking On add cart button [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> id: add-to-cart-button-1]<br></span>
+                <span class="reporter-method-output">Getting add to cart message [[ChromeDriver: chrome on WINDOWS (0ee2b4debc0d4e5f4a73bc696dbed12c)] -> class name: content]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToRegisterPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on register button [[ChromeDriver: chrome on WINDOWS (38d3c29381b1339fd0243ee60c4dd489)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Getting Register message [[ChromeDriver: chrome on WINDOWS (38d3c29381b1339fd0243ee60c4dd489)] -> xpath: //strong[contains(text(),'Your Personal Details')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldLoginWithValidCredentialsSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter email dhanno@gmail.comOn Email Field [[ChromeDriver: chrome on WINDOWS (b3f6ec94c9c7339bb30741dc25babe86)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Enter password 123456On Password Field [[ChromeDriver: chrome on WINDOWS (b3f6ec94c9c7339bb30741dc25babe86)] -> id: Password]<br></span>
+                <span class="reporter-method-output">Clicking on login button [[ChromeDriver: chrome on WINDOWS (b3f6ec94c9c7339bb30741dc25babe86)] -> xpath: //input[@class='button-1 login-button']]<br></span>
+                <span class="reporter-method-output">Getting welcome to store message [[ChromeDriver: chrome on WINDOWS (b3f6ec94c9c7339bb30741dc25babe86)] -> xpath: //h2[contains(text(),'Welcome to our store')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter email dhanno@gmail.comOn Email Field [[ChromeDriver: chrome on WINDOWS (ac62005a2b158d370418a74f4c0170c1)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Enter password 123456On Password Field [[ChromeDriver: chrome on WINDOWS (ac62005a2b158d370418a74f4c0170c1)] -> id: Password]<br></span>
+                <span class="reporter-method-output">Clicking on login button [[ChromeDriver: chrome on WINDOWS (ac62005a2b158d370418a74f4c0170c1)] -> xpath: //input[@class='button-1 login-button']]<br></span>
+                <span class="reporter-method-output">Getting welcome to store message [[ChromeDriver: chrome on WINDOWS (ac62005a2b158d370418a74f4c0170c1)] -> xpath: //h2[contains(text(),'Welcome to our store')]]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on register button [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> link text: Register]<br></span>
+                <span class="reporter-method-output">Clicking on Radio Button [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: gender-male]<br></span>
+                <span class="reporter-method-output">Enter First Name dhannoRunFirst Name Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: FirstName]<br></span>
+                <span class="reporter-method-output">Enter Last Name runLast Name Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: LastName]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Day 4Date Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> name: DateOfBirthDay]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Month mayBirth Month Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> name: DateOfBirthMonth]<br></span>
+                <span class="reporter-method-output">Selecting Date of Birth Year 1985Birth Year Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> name: DateOfBirthYear]<br></span>
+                <span class="reporter-method-output">Enter Email dhannoG1@gmail.comEmail Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: Email]<br></span>
+                <span class="reporter-method-output">Enter Company Name dhanno limitedCompany Name Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: Company]<br></span>
+                <span class="reporter-method-output">Clicking on check box button for NewsLetter [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: Newsletter]<br></span>
+                <span class="reporter-method-output">Enter Password dhannorun123@On Password Field[[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: Password]<br></span>
+                <span class="reporter-method-output">Enter Confirm Password dhannorun123@Confirm Password Field [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: ConfirmPassword]<br></span>
+                <span class="reporter-method-output">Clicking On Registration Button [[ChromeDriver: chrome on WINDOWS (984890907287b9ca810be936303ec202)] -> id: register-button]<br></span>
+                <span class="reporter-method-output">Getting Registration Complete Message Proxy element for: DefaultElementLocator 'By.className: result'<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNotAddProductToCartSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on computer button [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Computers')]]<br></span>
+                <span class="reporter-method-output">Clicking on Desktop button [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> xpath: //ul[@class='top-menu notmobile']//a[contains(text(),'Desktops')]]<br></span>
+                <span class="reporter-method-output">Clicking on position [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> id: products-orderby]<br></span>
+                <span class="reporter-method-output">Clicking on A to Z [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> xpath: //option[contains(text(),'Name: A to Z')]]<br></span>
+                <span class="reporter-method-output">Clicking on build computer [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> link text: Build your own computer]<br></span>
+                <span class="reporter-method-output">Clicking on radio button feature [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> xpath: //input[@id='product_attribute_3_7']]</span>
+                <span class="reporter-method-output">Clicking On add cart button [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> id: add-to-cart-button-1]<br></span>
+                <span class="reporter-method-output">Getting add to cart message [[ChromeDriver: chrome on WINDOWS (7f96a4cda5ecbeddcfc6f3634bc828ce)] -> class name: content]<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.ComputerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToComputersPage</span>
+                <span class="method-start">53237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54539 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">57200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">70734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToLoginFeature</span>
+                <span class="method-start">70743 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">73669 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpEmail</span>
+                <span class="method-start">75467 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">75468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">92288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToRegisterPage</span>
+                <span class="method-start">92296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99331 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.ComputerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">100264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">116067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldAddProductToCartSuccessfully</span>
+                <span class="method-start">116082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158114 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">164677 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">180221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldLoginWithValidCredentialsSuccessfully</span>
+                <span class="method-start">180279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">216588 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">218274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">235237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldRegisterSuccessfullyWithValidCredentials</span>
+                <span class="method-start">235245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">276566 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.ComputerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">289112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">309216 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNotAddProductToCartSuccessfully</span>
+                <span class="method-start">309244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">353459 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">377048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">393479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNotLoginWithInvalidCredentialsSuccessfully</span>
+                <span class="method-start">393485 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">428957 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.nopcommerce.testsuite.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">432860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">454608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNotRegisterSuccessfullyWithInvalidValidCredentials</span>
+                <span class="method-start">454615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">568830 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
